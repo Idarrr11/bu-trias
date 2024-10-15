@@ -7,8 +7,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/web', function () {
-    return view('dashboard');
-});
+    return view('layanan1');
+})->middleware(['auth', 'verified'])->name('web');
+
+Route::get('/web1', function () {
+    return view('layanan2');
+})->middleware(['auth', 'verified'])->name('web1');
+
 Route::get('/dashboard', function () {
     return view('website');
 })->middleware(['auth', 'verified'])->name('dashboard');
