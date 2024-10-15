@@ -1,0 +1,13 @@
+.menu li:hover .sub-menu {
+    display: block; /* Menampilkan sub-menu saat di-hover */
+}
+
+.sub-menu {
+    display: none; /* Menyembunyikan sub-menu secara default */
+    position: absolute; /* Memungkinkan sub-menu untuk ditampilkan di bawah menu utama */
+    background-color: #1f2937; /* Warna latar belakang */
+    z-index: 10; /* Menempatkan sub-menu di atas elemen lainnya */
+    border-radius: 0.375rem; /* Untuk membuat sudut yang lebih halus */
+    margin-top: 0.5rem; /* Jarak antara menu utama dan sub-menu */
+    min-width: 190px; /* Mengatur lebar minimum agar cukup untuk semua item */
+}
